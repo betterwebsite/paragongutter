@@ -1,5 +1,5 @@
 ---
-title: 'Contact | Code Stitch Web Designs'
+title: 'Contact | Paragon Gutter'
 description: 'Meta description for the page'
 preloadImg: '/assets/images/cabinets2.jpg'
 permalink: 'contact/'
@@ -41,7 +41,7 @@ eleventyNavigation:
                     <span class="cs-topper">Contact</span>
                     <h2 class="cs-title">Get in Touch</h2>
                     <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
+                        
                     </p>
                 </div>
                 <label>
@@ -57,8 +57,16 @@ eleventyNavigation:
                     <input required type="text" id="phone" name="phone" placeholder="Phone">
                 </label>
                 <label>
-                    How Did You Find Us
-                    <input type="text" id="find" name="find-us" placeholder="How did you find us?">
+                    What Service Are You Interested In
+                    <select required id="service" name="service-interest" style="border: 1px solid #b4b2c7;border-radius: 0.5rem;margin-top: 0.25rem;height: 4rem;width: 100%;box-sizing: border-box;padding-left: 1.25rem;font-size: 1rem;transition: border 0.3s;">
+                        <option value="">Select a service</option>
+                        <option value="gutter">Gutter</option>
+                        <option value="gutter-protection">Gutter Protection</option>
+                        <option value="soffit">Soffit</option>
+                        <option value="fascia">Fascia</option>
+                        <option value="siding">Siding</option>
+                        <option value="others">Others</option>
+                    </select>
                 </label>
                 <label class="cs-label-message">
                     Message
@@ -78,8 +86,6 @@ eleventyNavigation:
                 <a class="cs-link" href="{{client.address.mapLink}}">
                     {{client.address.lineOne}},
                     <br/>
-                    {{client.address.lineTwo}},
-                    <br/>
                     <span class="cs-block">
                         {{client.address.city}}
                         {{client.address.state}}
@@ -89,8 +95,8 @@ eleventyNavigation:
 
                 <!-- Background Image-->
                 <picture class="cs-bg-picture">
-                    <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building" loading="lazy" width="2500" height="1667">
+                    <source media="(min-width: 601px)" srcset="/assets/images/design.png">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/design.png" alt="building" loading="lazy" width="2500" height="1667">
                 </picture>
 
             </div>

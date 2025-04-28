@@ -1,0 +1,125 @@
+---
+title: 'Custom | Paragon Gutter'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'custom/'
+eleventyNavigation:
+    key: Custom
+    order: 3100
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/projects.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero" style="max-width: none;">
+        <h1 id="home-h">Custom</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 1000 }) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 1000 }) | webp %}">
+            <img aria-hidden="true" decoding="async" src="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 1000 }) | webp %}" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<!-- ============================================ 
+    This Stitch is used for content heavy interior pages
+    that have no design or layout.  Often times these are 
+    content silos where you talk extensively about a topic
+    to educate your visitors and rank on Google for the 
+    content.  These are great for pages that have a TON
+    of content.  Design isn't important here, it's all 
+    about making the content accessible and easy to read.
+================================================= -->
+
+<section id="content-page-1398">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/IMG_3310.jpg' | resize({ height: 1000 }) | webp %}">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/IMG_3310.jpg' | resize({ height: 1000 }) | webp %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/IMG_3310.jpg' | resize({ height: 1000 }) | webp %}" alt="people" width="542" height="728">
+                </picture>
+                <div class="cs-box">
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/list/badge.svg" alt="people" width="60" height="60">
+                    <span class="cs-desc">
+                        Custom Gutters Made for Your Home
+                    </span>
+                </div>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/person.svg" alt="icon" width="32" height="32">
+                        Custom Gutter Fabrication
+                    </h3>
+                    <p class="cs-item-text">
+                        Paragon Gutter offers tailored gutter solutions for unique homes, buildings, and architectural designs across Oklahoma.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/angle.svg" alt="icon" width="32" height="32">
+                        Perfect Fit and Finish
+                    </h3>
+                    <p class="cs-item-text">
+                        We design, build, and install custom gutters to match your property’s exact dimensions, curves, colors, and drainage needs.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-content">
+            <h1 class="cs-title">Expert <span class="cs-color">Custom Gutter Installation</span> in Oklahoma</h1>
+            <h2>Gutters Built to Fit Your Unique Project</h2>
+            <h3>Why Custom Gutters Matter for Special Homes</h3>
+            <h4>Designed for Beauty, Built for Performance</h4>
+            <p>
+                Not every home or business fits a one-size-fits-all gutter solution. Complex rooflines, historic restorations, high-capacity drainage needs, and aesthetic goals often require custom-designed gutters. At Paragon Gutter, we specialize in crafting seamless custom gutters that are made to match your property’s style, structure, and protection needs exactly.
+                <a href="/contact">Request a free consultation</a> to learn how our custom gutter solutions can enhance and protect your unique property across Blanchard, Newcastle, Norman, OKC, and beyond.
+            </p>
+            <p>
+                We use premium materials and expert craftsmanship to fabricate gutters that not only look great but function flawlessly. Whether it's a specialty material, oversized gutter system, or unique architectural detail, Paragon Gutter ensures a perfect fit and finish every time.
+            </p>
+            <h3>Advantages of Custom Gutter Installation</h3>
+            <ol>
+                <li>Seamless integration with your home’s unique architecture.</li>
+                <li>Improved water management for larger roofs or complex drainage areas.</li>
+                <li>Choice of materials, colors, and profiles for aesthetic consistency.</li>
+                <li>Longer-lasting performance tailored to Oklahoma’s weather.</li>
+                <li>Professional installation with attention to every custom detail.</li>
+            </ol>
+            <h4>Custom Gutter Projects We Serve Across Oklahoma</h4>
+            <ul>
+                <li>Blanchard Custom Gutter Installation</li>
+                <li>Newcastle Specialty Gutter Solutions</li>
+                <li>Norman and Tuttle Custom Gutter Services</li>
+                <li>OKC Metro High-End Custom Gutter Projects</li>
+                <li>Edmond, Yukon, Mustang Custom Gutters</li>
+                <li>Chickasha, Purcell, Pauls Valley Unique Gutter Installs</li>
+            </ul>
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+
+
+
+                                
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

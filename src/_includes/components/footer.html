@@ -2,51 +2,56 @@
 <!--                   Footer                     -->
 <!-- ============================================ -->
 
-<footer id="footer">
+<footer id="footer" style="background-color: white;">
     <div class="container">
         <div class="left-section">
-            <a class="logo" href="/"><img loading="lazy" decoding="async" src="/assets/svgs/logo-white.svg" alt="logo" width="264" height="78"></a>
+            <a class="logo" href="/"><img loading="lazy" decoding="async" src="/assets/images/Paragon_Gutter_1.png" alt="logo" width="264" height="78" style="width: 20rem;height: 5rem;"></a>
             <p>
-                Extra content if you need it, if not you can delete this whole p tag. I usually do.
+                
             </p>
         </div>
         <div class="right-section">
-            <div class="lists">
+            <div class="lists" >
                 <ul>
-                    <li>
-                        <h2>Information</h2>
+                    <li >
+                        <h2 style="color: black;">Information</h2>
                     </li>
                     <li>
-                        <a href="/">Home</a>
+                        <a href="/" style="color: black;">Home</a>
                     </li>
                     <li>
-                        <a href="/about">About Us</a>
+                        <a href="/gallery" style="color: black;">Gallery</a>
                     </li>
                     <li>
-                        <a href="/projects">Projects</a>
+                        <a href="/giving" style="color: black;">Giving</a>
                     </li>
                     <li>
-                        <a href="/reviews">Reviews</a>
-                    </li>
-                    <li>
-                        <a href="/contact">Contact</a>
+                        <a href="/join-team" style="color: black;">Join Team</a>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <h2>Services</h2>
+                        <h2 style="color: black;">Services</h2>
                     </li>
-                    <li>Service1</li>
-                    <li>Service2</li>
-                    <li>Service4</li>
-                    <li>Service5</li>
+                    <li>
+                        <a href="/gutter-installation" style="color: black;">Gutter Installation</a>
+                    </li>
+                    <li>
+                        <a href="/gutter-guard" style="color: black;">Gutter Guard</a>
+                    </li>
+                    <li>
+                        <a href="/new-construction" style="color: black;">New Construction</a>
+                    </li>
+                    <li>
+                        <a href="/custom" style="color: black;">Custom</a>
+                    </li>
                 </ul>
                 <ul>
                     <li>
-                        <h2>Contact</h2>
+                        <h2 style="color: black;">Contact</h2>
                     </li>
                     <li>
-                        <a href="/contact">
+                        <a href="/contact" style="color: black;">
                             {{client.address.lineOne}}<br>
                             {{client.address.lineTwo}}<br>
                             {{client.address.city}}
@@ -55,13 +60,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="tel:{{client.phoneForTel}}">
+                        <a href="tel:{{client.phoneForTel}}" style="color: black;">
                             T:
                             {{client.phoneFormatted}}
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:{{client.email}}">Click to Email</a>
+                        <a href="mailto:{{client.email}}" style="color: black;">Click to Email</a>
                     </li>
                 </ul>
             </div>
@@ -69,9 +74,9 @@
     </div>
 
     <div class="credit">
-        <span>Designed and Hand Coded by</span>
-        <a href="/" target="_blank" rel="noopener">Your Company Name</a>
-        <span class="copyright">
+        <span style="color: black;">Designed and Hand Coded by</span>
+        <a href="/" target="_blank" rel="noopener">Better Website</a>
+        <span class="copyright" style="color: black;">
             Copyright {% year %} - Present</span>
     </div>
 </footer>

@@ -1,0 +1,109 @@
+---
+title: 'Giving | Paragon Gutter'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'giving/'
+eleventyNavigation:
+    key: Giving
+    order: 600
+    hideOnDesktop: true
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/giving.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Our Heart</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 1000 }) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 1000 }) | webp %}">
+            <img aria-hidden="true" decoding="async" src="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 1000 }) | webp %}" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+
+
+<!-- ============================================ -->
+<!--               Why Choose Us                  -->
+<!-- ============================================ -->
+<!-- ============================================ -->
+<!--               Why Choose Us                  -->
+<!-- ============================================ -->
+
+<section id="why-choose-1485">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture cs-picture1">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/child1.jpg' | resize({ height: 1000 }) | webp %}">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/child1.jpg' | resize({ height: 1000 }) | webp %}">
+                <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/child1.jpg' | resize({ height: 1000 }) | webp %}" alt="Child supported by AIM" width="647" height="600">
+            </picture>
+            <!--Middle image-->
+            <picture class="cs-picture cs-picture2">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/map.png' | resize({ height: 1000 }) | webp %}">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/map.png' | resize({ height: 1000 }) | webp %}">
+                <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/map.png' | resize({ height: 1000 }) | webp %}" alt="AIM rescue efforts" width="320" height="320">
+            </picture>
+            <!--Flower-->
+            <img class="cs-flower" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/flower3.svg" alt="graphic" width="153" height="148" aria-hidden="true" style="filter: hue-rotate(34deg);">
+            <!--Squiggle-->
+            <img class="cs-squiggle" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/squiggle4.svg" alt="graphic" width="215" height="61" aria-hidden="true" style="filter: hue-rotate(34deg);">
+            <!--SVG Mask-->
+            <svg class="cs-mask" width="647" height="600" viewBox="0 0 647 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="cs-outer-mask" fill-rule="evenodd" clip-rule="evenodd" d="M0 0H647V600H0V0ZM38 110C64.0297 75.766 102.579 52.0824 143 37C144.788 36.3365 146.555 35.5378 148.324 34.7378C150.529 33.7407 152.738 32.7417 155 32C251.273 0.380304 364.071 -8.26436 457 38C514.621 66.6831 553.453 118.152 591.339 168.368C596.562 175.29 601.767 182.188 607 189C657.382 254.558 650.888 352.089 614 422C585.347 476.308 539.036 519.481 487 552C403.358 604.274 320.729 610.296 236 554C116.994 474.921 -74.8032 258.339 38 110Z" fill="#FFF8F5"/>
+                <!--Svg Border-->
+                <path class="cs-mask-border" d="M609.578 419.667L614 422L609.578 419.667C645.882 350.863 651.85 255.566 603.035 192.047L603.035 192.046C597.763 185.184 592.537 178.261 587.308 171.335C549.335 121.032 511.26 70.5951 454.772 42.4761L454.772 42.476C363.478 -2.9739 252.173 5.34746 156.56 36.7504L156.558 36.7511C154.801 37.3273 153.023 38.1029 151.033 39.0003C150.82 39.0965 150.603 39.1945 150.384 39.2937C148.637 40.0841 146.708 40.9569 144.748 41.6845C104.889 56.5573 67.259 79.7797 41.9802 113.026L38 110L41.98 113.027C-12.5389 184.72 5.99713 273.442 54.3776 355.432C102.668 437.269 179.806 510.656 238.767 549.836C280.403 577.499 321.25 589.69 361.787 588.715C402.372 587.739 443.075 573.556 484.35 547.76C535.868 515.565 581.448 472.984 609.578 419.667Z" stroke="#c3840ba8" stroke-width="10"/>
+            </svg>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Our Commitment to Making a Difference</span>
+            <h2 class="cs-title">Paragon Gutter Supports Agape International Missions</h2>
+            <p class="cs-text">
+                At Paragon Gutter, we believe in using our success to uplift others. That's why we proudly support <strong>Agape International Missions (AIM)</strong>, a nonprofit dedicated to rescuing, healing, and empowering survivors of human trafficking.
+            </p>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <picture class="cs-li-picture">
+                        <img class="cs-li-icon" aria-hidden="true" src="/assets/svgs/globe.svg" decoding="async" alt="icon" width="36" height="36" loading="lazy">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">AIM's Impact</h3>
+                        <p class="cs-li-text">
+                            Since 2014, AIM's SWAT team has rescued over 2,000 individuals from trafficking, leading to the arrest of more than 600 traffickers and resulting in over 1,700 years of prison sentences. Their holistic approach ensures survivors receive the care and support needed to rebuild their lives. <a href="https://aimfree.org/impact/" target="_blank" rel="noopener">Learn more</a>.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-li">
+                    <picture class="cs-li-picture">
+                        <img class="cs-li-icon" aria-hidden="true" src="/assets/svgs/support.svg" decoding="async" alt="icon" width="36" height="36" loading="lazy">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Paragon's Support</h3>
+                        <p class="cs-li-text">
+                            We are honored to contribute to AIM's mission through financial support and by raising awareness about their life-changing work. Every project we complete helps us continue this support, making a tangible difference in the fight against human trafficking.
+                        </p>
+                    </div>
+                </li>
+            </ul>                 
+            <a href="https://aimfree.org/" class="cs-button-solid" target="_blank" rel="noopener">Learn More About AIM</a>
+        </div>
+    </div>
+</section>
+ 
+
+                                
+{% endblock %}

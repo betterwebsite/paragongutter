@@ -1,0 +1,88 @@
+---
+title: 'Join Team | Paragon Gutter'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'join-team/'
+eleventyNavigation:
+    key: Join Team
+    order: 600
+    hideOnDesktop: true
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/join-team.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Join The Team</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/15-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/15-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}">
+            <img aria-hidden="true" decoding="async" src="{% getUrl '/assets/images/portfolio/15-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+<!-- ============================================ -->
+<!--                Why Choose Us                 -->
+<!-- ============================================ -->
+
+<section id="why-choose-1658">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">We're Hiring</span>
+                <h2 class="cs-title">Join the Paragon Gutter Team</h2>
+            </div>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <span class="cs-number">01</span>
+                    <p class="cs-li-text">
+                        Paragon Gutter is looking for hardworking, reliable individuals to join our growing team. Prior experience — General Contracting, Roofing, Gutter Installation, etc.
+                    </p>
+                </li>
+                <li class="cs-li">
+                    <span class="cs-number">02</span>
+                    <p class="cs-li-text">
+                        We offer competitive pay, a positive work environment, and opportunities for advancement within the company.
+                    </p>
+                </li>
+                <li class="cs-li">
+                    <span class="cs-number">03</span>
+                    <p class="cs-li-text">
+                        If you're interested in building a career with Paragon Gutter, we would love to hear from you. Apply today and grow with us!
+                    </p>
+                </li>
+            </ul>
+        </div>  
+        <div class="cs-wrapper">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/21-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/21-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}">
+                <a href="/contact" style="display: flex;align-items: center;justify-content: center;text-decoration: none;"><img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/21-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}" alt="meeting" width="630" height="414">
+                <p class="cs-button-solid" style="background-color: #daa114;color: white;margin-bottom: 8rem;">Click Here To Apply</p></a>
+            </picture>
+            
+
+            <p class="cs-review">
+                <svg class="cs-quote" preserveAspectRatio="none" viewBox="0 0 100 93" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".4" clip-path="url(#a-1658)" fill="var(--quoteColor)"><path d="M22.94 84H0L18.305.854H55L22.94 84ZM67.94 84H45L63.305.854H100L67.94 84Z"/></g><defs><clipPath id="a-1658"><path fill="#fff" transform="translate(0 .854)" d="M0 0h100v83.146H0z"/></clipPath></defs></svg>
+
+                We're growing fast and always looking for motivated individuals. Join Paragon Gutter and be part of a trusted team making a difference!
+            </p>
+            
+        </div>
+        
+    </div>
+    
+</section>
+
+                                
+{% endblock %}

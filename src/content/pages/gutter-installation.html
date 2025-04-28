@@ -1,0 +1,116 @@
+---
+title: 'Gutter Installation | Paragon Gutter'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'gutter-installation/'
+eleventyNavigation:
+    key: Gutter Installation
+    order: 3100
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/projects.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h" style="max-width: none;">Gutter Installation</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 1000 }) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 1000 }) | webp %}">
+            <img aria-hidden="true" decoding="async" src="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 1000 }) | webp %}" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+
+<section id="content-page-1398">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/15-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/15-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/15-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}" alt="people" width="542" height="728">
+                </picture>
+                <div class="cs-box">
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/gutter_guard.svg" alt="people" width="60" height="60" style="filter: invert(1);">
+                    <span class="cs-desc">
+                        Trusted Gutter Experts in Oklahoma
+                    </span>
+                </div>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/gutter.svg" alt="icon" width="32" height="32">
+                        Superior Gutter Installation
+                    </h3>
+                    <p class="cs-item-text">
+                        Professional gutter installation services for homes and businesses across Blanchard, Newcastle, Tuttle, Norman, OKC, and surrounding areas.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/list/badge.svg" alt="icon" width="32" height="32">
+                        Quality You Can Count On
+                    </h3>
+                    <p class="cs-item-text">
+                        We use premium materials and proven techniques to ensure long-lasting gutter systems for properties in Moore, Yukon, Mustang, Edmond, Chickasha, and beyond.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-content">
+            <h1 class="cs-title">Reliable <span class="cs-color">Gutter Installation</span> in Oklahoma</h1>
+            <h2>Protect Your Home with Professional Gutter Services</h2>
+            <h3>Expert Installation Across Blanchard, Newcastle, Tuttle, Norman, and More</h3>
+            <h4>Serving Oklahoma City (OKC) and Surrounding Areas</h4>
+            <p>
+                When it comes to gutter installation near Blanchard, Newcastle, Tuttle, Norman, OKC, Moore, Yukon, Mustang, Edmond, Chickasha, and Purcell, Paragon Gutter is the trusted name. We specialize in high-quality gutter solutions that protect your property from water damage while enhancing curb appeal.
+                Our experienced team serves communities across central Oklahoma with unmatched craftsmanship and customer service.
+            </p>
+            <p>
+                Whether you need new gutter installation, gutter replacement, or seamless gutters, we proudly deliver dependable services throughout Oklahoma. <a href="/contact">Request your free estimate today</a> and see why homeowners across Pauls Valley and beyond choose Paragon Gutter for their gutter needs.
+            </p>
+            <h3>Why Choose Us for Gutter Installation in Oklahoma?</h3>
+            <ol>
+                <li>Years of trusted experience installing gutters in Blanchard, Newcastle, Norman, and the OKC metro.</li>
+                <li>Professional, timely service tailored to your specific home's needs.</li>
+                <li>High-quality gutter materials designed for Oklahoma's weather conditions.</li>
+                <li>Fully insured and locally owned with a commitment to customer satisfaction.</li>
+                <li>Free consultations and honest, upfront pricing with no surprises.</li>
+            </ol>
+            <h4>Areas We Proudly Serve</h4>
+            <ul>
+                <li>Blanchard, OK Gutter Installation</li>
+                <li>Newcastle, OK Gutter Installation</li>
+                <li>Tuttle, OK Gutter Installation</li>
+                <li>Norman, OK Gutter Installation</li>
+                <li>Oklahoma City (OKC) Gutter Installation</li>
+                <li>Moore, Yukon, Mustang, and Edmond Gutter Services</li>
+                <li>Chickasha, Purcell, Pauls Valley, and surrounding towns</li>
+                <li>And throughout central and southern Oklahoma</li>
+            </ul>
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+
+                                
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

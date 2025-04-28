@@ -1,0 +1,111 @@
+---
+title: 'Gutter Guard | Paragon Gutter'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'gutter-guard/'
+eleventyNavigation:
+    key: Gutter Guard
+    order: 3100
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/projects.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero" style="max-width: none;">
+        <h1 id="home-h">Gutter Guard</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 1000 }) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 1000 }) | webp %}">
+            <img aria-hidden="true" decoding="async" src="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 1000 }) | webp %}" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+
+<section id="content-page-1398">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/30-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/30-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/30-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}" alt="people" width="542" height="728">
+                </picture>
+                <div class="cs-box">
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/shield.svg" alt="people" width="60" height="60">
+                    <span class="cs-desc">
+                        Gutter Protection You Can Trust
+                    </span>
+                </div>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/gutter.svg" alt="icon" width="32" height="32">
+                        Professional Gutter Guard Installation
+                    </h3>
+                    <p class="cs-item-text">
+                        Protect your home with premium gutter guards designed to withstand Oklahoma’s harsh weather and heavy debris.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/list/badge.svg" alt="icon" width="32" height="32">
+                        Lasting Protection for Oklahoma Homes
+                    </h3>
+                    <p class="cs-item-text">
+                        Serving Blanchard, Newcastle, Norman, OKC, and beyond, our gutter guards help keep your gutters free of clogs year-round.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-content">
+            <h1 class="cs-title">Top-Quality <span class="cs-color">Gutter Guards</span> for Oklahoma Homes</h1>
+            <h2>Protect Your Home from Clogs and Water Damage</h2>
+            <h3>Why You Need Gutter Guards in Oklahoma</h3>
+            <h4>Safeguarding Your Property the Smart Way</h4>
+            <p>
+                In Oklahoma, storms, falling leaves, and strong winds make gutter maintenance a constant battle. Without protection, clogged gutters can lead to costly damage including roof leaks, foundation issues, and landscape erosion. Gutter guards from Paragon Gutter offer a reliable way to keep your system flowing properly, saving you time, money, and hassle.
+                <a href="/contact">Request a free estimate</a> for professional gutter guard installation in Blanchard, Newcastle, Norman, OKC, and surrounding areas today.
+            </p>
+            <p>
+                Our gutter guards are engineered to block debris while allowing water to flow freely — delivering superior protection for your home season after season. Whether you're in Moore, Yukon, Mustang, Edmond, Chickasha, or Purcell, Paragon Gutter has the experience and products to keep your property protected.
+            </p>
+            <h3>The Benefits of Installing Gutter Guards</h3>
+            <ol>
+                <li>Prevents clogs caused by leaves, twigs, and debris.</li>
+                <li>Protects your home from water overflow and foundation damage.</li>
+                <li>Minimizes gutter cleaning and maintenance needs.</li>
+                <li>Enhances the life expectancy of your gutter system.</li>
+                <li>Guards against pests, birds, and insects nesting in your gutters.</li>
+            </ol>
+            <h4>Where We Install Gutter Guards in Oklahoma</h4>
+            <ul>
+                <li>Blanchard Gutter Guard Installation</li>
+                <li>Newcastle Gutter Guard Services</li>
+                <li>Tuttle and Norman Gutter Protection</li>
+                <li>OKC Metro Area Gutter Guard Solutions</li>
+                <li>Moore, Yukon, Mustang, and Edmond Gutter Services</li>
+                <li>Chickasha, Purcell, Pauls Valley, and surrounding areas</li>
+            </ul>
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+
+
+                                
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

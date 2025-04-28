@@ -1,0 +1,124 @@
+---
+title: 'New Construction | Paragon Gutter'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'new-construction/'
+eleventyNavigation:
+    key: New Construction
+    order: 3100
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/projects.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h" style="max-width: none;">New Construction</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 1000 }) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 1000 }) | webp %}">
+            <img aria-hidden="true" decoding="async" src="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 1000 }) | webp %}" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<!-- ============================================ 
+    This Stitch is used for content heavy interior pages
+    that have no design or layout.  Often times these are 
+    content silos where you talk extensively about a topic
+    to educate your visitors and rank on Google for the 
+    content.  These are great for pages that have a TON
+    of content.  Design isn't important here, it's all 
+    about making the content accessible and easy to read.
+================================================= -->
+
+<section id="content-page-1398">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/18-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/18-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/18-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}" alt="people" width="542" height="728">
+                </picture>
+                <div class="cs-box">
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/angle.svg" alt="people" width="60" height="60">
+                    <span class="cs-desc">
+                        Seamless Gutters for New Homes
+                    </span>
+                </div>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/person.svg" alt="icon" width="32" height="32">
+                        Expert New Construction Gutters
+                    </h3>
+                    <p class="cs-item-text">
+                        Our team specializes in installing seamless gutters on new construction homes across Oklahoma, enhancing both beauty and protection.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/shield.svg" alt="icon" width="32" height="32" style="filter: invert(1);">
+                        Protect Your New Investment
+                    </h3>
+                    <p class="cs-item-text">
+                        Quality gutter systems safeguard new builds from foundation damage, erosion, and water-related issues — starting from day one.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-content">
+            <h1 class="cs-title">Seamless <span class="cs-color">Gutter Installation</span> for New Construction Homes</h1>
+            <h2>Start Strong with Professional Gutter Solutions</h2>
+            <h3>Why Gutters Are Critical for New Homes</h3>
+            <h4>Protect and Enhance Your Property from the Beginning</h4>
+            <p>
+                Building a new home is an exciting milestone — but protecting that investment starts immediately. Gutters are a critical first line of defense against Oklahoma’s heavy rains, helping direct water safely away from your foundation, landscaping, and exterior finishes. Without proper gutter installation, new construction homes are vulnerable to costly water damage right from the start.
+                <a href="/contact">Contact Paragon Gutter today</a> to ensure your new build gets the seamless gutter protection it deserves across Blanchard, Newcastle, Norman, OKC, and surrounding areas.
+            </p>
+            <p>
+                At Paragon Gutter, we custom fit and install high-quality seamless gutters that blend perfectly with your home's design. Our expert craftsmanship not only provides superior protection but also enhances your home's curb appeal — making sure your gutters are both functional and beautiful from day one.
+            </p>
+            <h3>Benefits of Seamless Gutters on New Construction</h3>
+            <ol>
+                <li>Protects your new home’s foundation from water damage.</li>
+                <li>Prevents soil erosion and safeguards landscaping investments.</li>
+                <li>Maintains the aesthetic look of your new property with seamless design.</li>
+                <li>Reduces future maintenance costs with professional installation.</li>
+                <li>Custom-fit gutters to match the style and color of your new build.</li>
+            </ol>
+            <h4>New Construction Gutter Installation Areas We Serve</h4>
+            <ul>
+                <li>Blanchard New Construction Gutter Installation</li>
+                <li>Newcastle New Build Gutter Services</li>
+                <li>Tuttle, Norman, and Moore New Home Gutters</li>
+                <li>Gutter Systems for OKC Metro Area Homes</li>
+                <li>Edmond, Yukon, Mustang New Construction Gutter Solutions</li>
+                <li>Chickasha, Purcell, Pauls Valley, and nearby communities</li>
+            </ul>
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+
+
+                                
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}
