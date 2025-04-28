@@ -275,3 +275,43 @@
     }
 }
                                 
+
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #why-choose-1485 {
+            .dark-icon{
+                filter: invert(1);
+            }
+            background-color:  var(--dark);
+
+            .cs-title, .cs-text, .cs-h3, .cs-li-text {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-text, .cs-li-text {
+                opacity: .8;
+            }
+            
+            .cs-li {
+                border-color: rgba(255, 255, 255, .1);
+            }
+
+            .cs-icon {
+                filter: grayscale(1) brightness(1000%);
+            }
+
+            .cs-top, .cs-bottom {
+                path {
+                    fill: var(--dark);
+                }
+            }
+
+            .cs-outer-mask {
+                /* same as the BG color of the section */
+                fill:  var(--dark);
+            }
+        }
+    }
+}

@@ -208,3 +208,26 @@
     }
 }
                                 
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #why-choose-1658 {
+            background-color: rgba(0, 0, 0, .3);
+
+            .cs-title, .cs-li-text, .cs-review {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-li-text {
+                opacity: .8;
+            }
+
+            .cs-wrapper {
+                &:before {
+                    background-color: var(--dark);
+                }
+            }
+        }
+    }
+}

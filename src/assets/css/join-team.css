@@ -182,3 +182,20 @@
     align-self: flex-end;
   }
 }
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #why-choose-1658 {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  body.dark-mode #why-choose-1658 .cs-title,
+  body.dark-mode #why-choose-1658 .cs-li-text,
+  body.dark-mode #why-choose-1658 .cs-review {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #why-choose-1658 .cs-li-text {
+    opacity: 0.8;
+  }
+  body.dark-mode #why-choose-1658 .cs-wrapper:before {
+    background-color: var(--dark);
+  }
+}

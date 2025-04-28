@@ -242,3 +242,36 @@
     flex: none;
   }
 }
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #why-choose-1485 {
+    background-color: var(--dark);
+  }
+  body.dark-mode #why-choose-1485 .dark-icon {
+    filter: invert(1);
+  }
+  body.dark-mode #why-choose-1485 .cs-title,
+  body.dark-mode #why-choose-1485 .cs-text,
+  body.dark-mode #why-choose-1485 .cs-h3,
+  body.dark-mode #why-choose-1485 .cs-li-text {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #why-choose-1485 .cs-text,
+  body.dark-mode #why-choose-1485 .cs-li-text {
+    opacity: 0.8;
+  }
+  body.dark-mode #why-choose-1485 .cs-li {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  body.dark-mode #why-choose-1485 .cs-icon {
+    filter: grayscale(1) brightness(1000%);
+  }
+  body.dark-mode #why-choose-1485 .cs-top path,
+  body.dark-mode #why-choose-1485 .cs-bottom path {
+    fill: var(--dark);
+  }
+  body.dark-mode #why-choose-1485 .cs-outer-mask {
+    /* same as the BG color of the section */
+    fill: var(--dark);
+  }
+}
