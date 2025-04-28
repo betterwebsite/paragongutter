@@ -472,7 +472,170 @@ eleventyNavigation:
                 </picture>
             </li>
         </ul>
+
+
     </div>
+    <section class="gutter-tech-section">
+        <div class="gutter-tech-content">
+          <span class="gutter-tech-topper">FOR BRAND NEW GUTTERS</span>
+          <h2 class="gutter-tech-title" style="color: white;">Cutting Edge Technology<br>with DoublePro®</h2>
+      
+          <div class="gutter-tech-feature">
+              <div class="gutter-tech-text">
+                <img src="/assets/images/eclipse.png" alt="Eclipse Technology" class="gutter-tech-icon">
+              <!-- <h3 class="gutter-tech-heading">eclipse™ TECHNOLOGY</h3> -->
+              <p class="gutter-tech-description" style="color: white;">
+                The double membrane keeps debris from getting inside the gutter. The offset holes make it the perfect filter, allowing water to drain freely while blocking pine needles and leaves without ever getting clogged.
+              </p>
+            </div>
+          </div>
+      
+          <div class="gutter-tech-feature">
+            <!-- <img src="/path/to/your-vortex-icon.png" alt="Vortex Technology" class="gutter-tech-icon"> -->
+            <div class="gutter-tech-text">
+                <img src="/assets/images/vortex.png" alt="Vortex Technology" class="gutter-tech-icon">
+              <!-- <h3 class="gutter-tech-heading">vortex™ TECHNOLOGY</h3> -->
+              <p class="gutter-tech-description" style="color: white;">
+                The suction created by the two membranes makes it possible to drain three times more water than ever recorded in the heaviest storms. The inner membrane draws water through the wider holes.
+              </p>
+            </div>
+          </div>
+      
+          <a href="/alu-rex" class="gutter-tech-link">LEARN MORE</a>
+        </div>
+      
+        <div class="gutter-tech-image">
+          <img src="/assets/images/alurex.png" alt="Gutter Product Image">
+        </div>
+      </section>
+      <style>
+.gutter-tech-section {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: url('/assets/images/pine-needles.jpg') center/cover no-repeat;
+  padding: 80px 40px;
+  position: relative;
+  color: white;
+  margin: auto;
+  margin-top: 2rem;
+  border-radius: 8px;
+}
+
+.gutter-tech-content {
+  max-width: 600px;
+  z-index: 2;
+}
+
+.gutter-tech-topper {
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #ffc107; /* yellow */
+  text-transform: uppercase;
+}
+
+.gutter-tech-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 20px 0 40px;
+  line-height: 1.2;
+}
+
+.gutter-tech-feature {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.gutter-tech-icon {
+  width: 50%;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+@media only screen and (max-width: 500px) {
+    .gutter-tech-section{
+        width: 100%;
+        padding: 40px 20px;
+    }
+.gutter-tech-icon {
+  width: 100%;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+.gutter-tech-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0 5px;
+  line-height: 1.2;
+}
+.gutter-tech-image{
+    display: none;
+}
+}
+.gutter-tech-text {
+  flex: 1;
+}
+
+.gutter-tech-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.gutter-tech-description {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.gutter-tech-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #ffc107; /* yellow */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.gutter-tech-link:hover {
+  color: #ffffff;
+}
+
+.gutter-tech-image {
+  max-width: 400px;
+  z-index: 2;
+}
+
+.gutter-tech-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+      </style>
+    <!-- <div style="display: flex;align-items: center;justify-content: center; width: 100%;" >
+        <div style="position: absolute">
+            <div class="cs-flex-group" style="width: 100%;">
+                <span class="cs-topper">For Brand New Gutters</span>
+                <h2 class="cs-title" style="color: white;">Cutting Edge Technology with DoublePro<sup style="font-size: 0.65em; vertical-align: bottom;">®</sup></h2>
+            </div>
+            <ul style="width: 50%;">
+                <li>The double membrane keeps debris from getting inside the gutter. The offset holes make it the perfect filter, allowing water to drain freely while blocking pine needles and leaves without ever getting clogged.</li>
+                <li>The double membrane keeps debris from getting inside the gutter. The offset holes make it the perfect filter, allowing water to drain freely while blocking pine needles and leaves without ever getting clogged.</li>
+                <li>The double membrane keeps debris from getting inside the gutter. The offset holes make it the perfect filter, allowing water to drain freely while blocking pine needles and leaves without ever getting clogged.</li>
+            </ul>
+
+        </div>
+
+        <picture style="width: 100%;">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/pine-needles.jpg' | resize({ height: 1000 }) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/pine-needles.jpg' | resize({ height: 1000 }) | webp %}">
+            <img style="width: 100%;object-fit: cover;" decoding="async" src="{% getUrl '/assets/images/pine-needles.jpg' | resize({ height: 1000 }) | webp %}" alt="construction" width="413" height="374" aria-hidden="true">
+        </picture>
+        
+    </div> -->
 </section>
                                 
 

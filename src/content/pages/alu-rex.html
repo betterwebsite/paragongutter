@@ -1,0 +1,111 @@
+---
+title: 'Alu-Rex | Paragon Gutter'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'alu-rex/'
+eleventyNavigation:
+    key: Alu Rex
+    order: 3100
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/projects.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero" style="max-width: none;">
+        <h1 id="home-h">Alu Rex</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 1000 }) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 1000 }) | webp %}">
+            <img aria-hidden="true" decoding="async" src="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 1000 }) | webp %}" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+
+    <section id="content-page-1398">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <div class="cs-flex">
+                    <picture class="cs-background">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/29-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/29-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/29-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}" alt="people" width="542" height="728">
+                    </picture>
+                    <div class="cs-box">
+                        <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/shield.svg" alt="shield icon" width="60" height="60">
+                        <span class="cs-desc">
+                            Premium Alu-Rex Gutter Solutions
+                        </span>
+                    </div>
+                </div>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <h3 class="cs-h3">
+                            <img class="cs-h3-icon dark-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/gutter.svg" alt="gutter icon" width="32" height="32">
+                            Alu-Rex Gutter Guard Technology
+                        </h3>
+                        <p class="cs-item-text">
+                            Paragon Gutter proudly offers Alu-Rex products — the industry leader in innovative gutter guard technology for superior performance in Oklahoma’s toughest conditions.
+                        </p>
+                    </li>
+                    <li class="cs-item">
+                        <h3 class="cs-h3">
+                            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/list/badge.svg" alt="badge icon" width="32" height="32">
+                            Advanced Protection for Your Home
+                        </h3>
+                        <p class="cs-item-text">
+                            From Blanchard to OKC and beyond, Paragon Gutter’s Alu-Rex systems help prevent water damage, eliminate gutter clogs, and reduce maintenance year after year.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cs-content">
+                <h1 class="cs-title">Oklahoma's Trusted Installer of <span class="cs-color">Alu-Rex Gutter Systems</span></h1>
+                <h2>Durable. Reliable. Maintenance-Free.</h2>
+                <h3>Why Choose Alu-Rex?</h3>
+                <h4>Leading the Way in Gutter Protection</h4>
+                <p>
+                    Alu-Rex is recognized worldwide for revolutionizing the gutter industry with cutting-edge protection systems. Their patented Continuous Hanger™ system provides unmatched strength, while microfiltration technology ensures your gutters stay clear through Oklahoma’s harshest seasons. 
+                    <a href="/contact">Contact us today</a> to schedule your Alu-Rex installation in Blanchard, Newcastle, Norman, OKC, and surrounding communities.
+                </p>
+                <p>
+                    At Paragon Gutter, we believe in providing only the best. That's why we chose Alu-Rex — a name synonymous with durability, innovation, and peace of mind. Whether you're in Moore, Yukon, Mustang, Edmond, or Chickasha, we ensure perfect installation that keeps your home protected year-round.
+                </p>
+                <h3>The Alu-Rex Advantage</h3>
+                <ol>
+                    <li>Continuous Hanger™ system reinforces gutters for exceptional strength.</li>
+                    <li>Microfiltration design blocks debris while allowing maximum water flow.</li>
+                    <li>Prevents ice dam formation and water infiltration.</li>
+                    <li>Virtually maintenance-free with lifetime durability.</li>
+                    <li>Ideal for Oklahoma’s severe weather and heavy debris seasons.</li>
+                </ol>
+                <h4>Service Areas for Alu-Rex Gutter Installation</h4>
+                <ul>
+                    <li>Blanchard Alu-Rex Gutter Services</li>
+                    <li>Newcastle and Norman Gutter System Installations</li>
+                    <li>OKC Metro Area Alu-Rex Experts</li>
+                    <li>Moore, Yukon, Mustang, and Edmond Gutter Protection</li>
+                    <li>Chickasha, Purcell, Pauls Valley, and surrounding communities</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cs-bubbles" aria-hidden="true"></div>
+    </section>
+    
+
+
+                                
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}
