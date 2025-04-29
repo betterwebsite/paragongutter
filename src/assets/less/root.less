@@ -1274,6 +1274,9 @@
 /* Mobile */
 @media only screen and (min-width: 0rem) {
     #footer {
+        .footer-text{
+            color: black;
+        }
         .logo-dark{
             display: none;
         }
@@ -1333,12 +1336,12 @@
                         margin-bottom: (12/16rem);
                         list-style: none;
                         font-size: (18/16rem);
-                        color: #fff;
+                        color: black;
 
                         a {
                             text-decoration: none;
                             line-height: (21/18em);
-                            color: #fff;
+                            color: black;
                             transition: color 0.3s;
                             &:hover {
                                 color: var(--primary);
@@ -1352,7 +1355,7 @@
                         font-size: (18/16rem);
                         line-height: (21/18em);
                         font-weight: bold;
-                        color: #fff;
+                        color: black;
 
                         &:before {
                             position: absolute;
@@ -1426,6 +1429,9 @@
 /* Small Desktop */
 @media only screen and (min-width: 64rem) {
     #footer {
+        .footer-text{
+            color: black;
+        }
         font-size: ~"min(1.2vw, 1em)";
         .container {
             display: flex;
@@ -1528,13 +1534,26 @@
             .logo-dark{
                 display: block;
             }
+            .footer-text{
+                color: white;
+            }
+            .right-section {
+                .lists {
+                    ul {
+                        h2{
+                            color: white;
+                        }
+                        li {
+                            color: white;
+                            a {
+                                color: white;
+                            }
+                        }
+                    }
+                }    
+            }
         }
-
-        }
-        .footer-text{
-            color: white;
-        }
-        
+    }
 }
 
 
