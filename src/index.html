@@ -99,7 +99,7 @@ eleventyNavigation:
     <picture class="cs-background">
         <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/portfolio/IMG_3310.jpg' | resize({ height: 2000, position: 'bottom' }) | webp %}">
         <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/IMG_3310.jpg' | resize({ height: 2000, position: 'bottom' }) | webp %}">
-        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/IMG_3310.jpg' | resize({ height: 800, position: 'bottom' }) | webp %}">
+        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/IMG_3310.jpg' | resize({ height: 800, position: 'bottom' }) | webp({ quality: 45 }) %}">
         <img aria-hidden="true"  decoding="async" src="{% getUrl '/assets/images/portfolio/IMG_3310.jpg' | resize({ height: 2000, position: 'bottom' }) | webp %}" alt="meeting" width="275" height="132">
     </picture>
         
@@ -152,7 +152,7 @@ eleventyNavigation:
     <section id="services" class="services" >
         <!-- Get Icons From flaticon.com -->
         <div class="card">
-            <img aria-hidden="true"  decoding="async" style="width: 100%;height: auto;" src="{% getUrl '/assets/images/portfolio/oklahoma1_only.png' | resize({ height: 200 }) | webp %}" alt="meeting" width="275" height="132">
+            <img aria-hidden="true"  decoding="async" style="width: 100%;height: auto;" src="{% getUrl '/assets/images/portfolio/oklahoma1_only.png' | resize({ height: 200 }) | webp({ quality: 45 }) %}" alt="meeting" width="275" height="132">
         </div>
         <div class="card">
             <h2>The Seamless Solution</h2>
@@ -429,7 +429,7 @@ eleventyNavigation:
                     </p>
                 </a>
                 <picture class="cs-item-background">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 400 }) | webp %}">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 400 }) | webp({ quality: 45 }) %}">
                     <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 1000 }) | webp %}">
                     <img decoding="async" src="{% getUrl '/assets/images/portfolio/IMG_2977.jpg' | resize({ height: 1000 }) | webp %}" alt="construction" width="413" height="374" aria-hidden="true" loading="lazy">
                 </picture>
@@ -442,7 +442,7 @@ eleventyNavigation:
                     </p>
                 </a>
                 <picture class="cs-item-background">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/IMG_3308.jpg' | resize({ height: 400 }) | webp %}">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/IMG_3308.jpg' | resize({ height: 400 }) | webp({ quality: 45 }) %}">
                     <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/IMG_3308.jpg' | resize({ height: 1000 }) | webp %}">
                     <img decoding="async" src="{% getUrl '/assets/images/portfolio/IMG_3308.jpg' | resize({ height: 1000 }) | webp %}" alt="construction" width="413" height="374" aria-hidden="true" loading="lazy">
                 </picture>
@@ -455,7 +455,7 @@ eleventyNavigation:
                     </p>
                 </a>
                 <picture class="cs-item-background">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/IMG_2581.jpg' | resize({ height: 400 }) | webp %}">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/IMG_2581.jpg' | resize({ height: 400 }) | webp({ quality: 45 }) %}">
                     <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/IMG_2581.jpg' | resize({ height: 1000 }) | webp %}">
                     <img decoding="async" src="{% getUrl '/assets/images/portfolio/IMG_2581.jpg' | resize({ height: 1000 }) | webp %}" alt="construction" width="413" height="374" aria-hidden="true" loading="lazy">
                 </picture>
@@ -468,7 +468,7 @@ eleventyNavigation:
                     </p>
                 </a>
                 <picture class="cs-item-background">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/15-paragon-gutter.jpg' | resize({ height: 400 }) | webp %}">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/15-paragon-gutter.jpg' | resize({ height: 400 }) | webp({ quality: 45 }) %}">
                     <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/15-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}">
                     <img decoding="async" src="{% getUrl '/assets/images/portfolio/15-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}" alt="construction" width="413" height="374" aria-hidden="true" loading="lazy">
                 </picture>
@@ -479,7 +479,7 @@ eleventyNavigation:
     </div>
     <section class="gutter-tech-section">
   <picture class="cs-item-background" style="filter: brightness(2.5);">
-    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/pine-needles.jpg' | resize({ height: 400 }) | webp %}">
+    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/pine-needles.jpg' | resize({ height: 400 }) | webp({ quality: 45 }) %}">
     <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/pine-needles.jpg' | resize({ height: 1000 }) | webp %}">
     <img decoding="async" src="{% getUrl '/assets/images/pine-needles.jpg' | resize({ height: 1000 }) | webp %}" alt="construction" width="413" height="374" aria-hidden="true" loading="lazy">
   </picture>
@@ -725,12 +725,12 @@ eleventyNavigation:
             <!-- Left Image Section -->
             <div class="cs-left">
                 <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/09-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/09-paragon-gutter.jpg' | resize({ height: 300 }) | webp({ quality: 45 }) %}">
                     <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/09-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}">
                     <img aria-hidden="true" decoding="async" src="{% getUrl '/assets/images/portfolio/09-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}" alt="cabinets" loading="lazy" width="400" height="563">
                 </picture>
                 <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/07-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/07-paragon-gutter.jpg' | resize({ height: 300 }) | webp({ quality: 45 }) %}">
                     <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/07-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}">
                     <img aria-hidden="true" decoding="async" src="{% getUrl '/assets/images/portfolio/07-paragon-gutter.jpg' | resize({ height: 1000 }) | webp %}" alt="house" loading="lazy" width="400" height="563">
                 </picture>
@@ -963,7 +963,7 @@ eleventyNavigation:
             <picture class="cs-picture" style="border-right: 1px solid white;">
                 <!--Mobile Image-->
                 <source media="(max-width: 600px)"
-                        srcset="{% getUrl '/assets/images/portfolio/IMG_3249.jpg' | resize({ height: 1000 }) | webp %}">
+                        srcset="{% getUrl '/assets/images/portfolio/IMG_3249.jpg' | resize({ height: 800 }) | webp({ quality: 45 }) %}">
                 <!--Tablet and above Image-->
                 <source media="(min-width: 601px)"
                         srcset="{% getUrl '/assets/images/portfolio/IMG_3249.jpg' | resize({ height: 1000 }) | webp %}">
@@ -974,7 +974,7 @@ eleventyNavigation:
             <picture class="cs-picture" style="border-right: 1px solid white;">
                 <!--Mobile Image-->
                 <source media="(max-width: 600px)"
-                        srcset="{% getUrl '/assets/images/portfolio/IMG_3312.jpg' | resize({ height: 1000 }) | webp %}">
+                        srcset="{% getUrl '/assets/images/portfolio/IMG_3312.jpg' | resize({ height: 800 }) | webp({ quality: 45 }) %}">
                 <!--Tablet and above Image-->
                 <source media="(min-width: 601px)"
                         srcset="{% getUrl '/assets/images/portfolio/IMG_3312.jpg' | resize({ height: 1000 }) | webp %}">
@@ -985,7 +985,7 @@ eleventyNavigation:
             <picture class="cs-picture">
                 <!--Mobile Image-->
                 <source media="(max-width: 600px)"
-                        srcset="{% getUrl '/assets/images/portfolio/IMG_3305.jpg' | resize({ height: 1000 }) | webp %}">
+                        srcset="{% getUrl '/assets/images/portfolio/IMG_3305.jpg' | resize({ height: 800 }) | webp({ quality: 45 }) %}">
                 <!--Tablet and above Image-->
                 <source media="(min-width: 601px)"
                         srcset="{% getUrl '/assets/images/portfolio/IMG_3305.jpg' | resize({ height: 1000 }) | webp %}">
